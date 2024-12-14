@@ -81,14 +81,3 @@ while (True):
         
         print("PLEASE enter the correct arithmatic operator as shown in the menu!")
         
-    
-    continuing = input("Do you want to continue (type:'yes' or 'stop'): ") #We are using a while for looping
-    
-    if (continuing == "yes"):
-        
-        continue
-    
-    else:
-        
-        print("Force break due to not adding the correct word")
-        break
