@@ -57,13 +57,3 @@ elif (arithch == "*"):
 else:
     
     print("PLEASE enter the correct arithmatic operator as shown in the menu!")
-    
-    addition(value1, value2)
-    
-elif (arithch == "-"):
-    
-    subtraction(value1, value2)
-    
-elif (arithch == "/"):
-    
-    division(value1, value2)
