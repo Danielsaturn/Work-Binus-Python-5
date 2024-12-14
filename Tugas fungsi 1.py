@@ -9,35 +9,35 @@ def addition(value1 = 0, value2 = 0):
     
     addre= value1 + value2
     
-    return addition
+    return addre
 #this definition is for addition
 
-def subtraction(value1 = 0, value2 = 0):
+def subtraction(value1 = 1, value2 = 1):
     
     addre= value1 - value2
     
-    return subtraction
+    return addre
 #this definition isfor subtraction
 
-def division(value1 = 0, value2 = 0):
+def division(value1 = 1, value2 = 1):
     
     addre= value1 / value2
     
-    return division
+    return addre
 #this definition is for division
 
-def multiplication(value1 = 0, value2 = 0):
+def multiplication(value1 = 1, value2 = 1):
     
     addre= value1 * value2
     
-    return multiplication
+    return addre
 #this definition is for multiplication
 
-def modulus(value1 = 0, value2 = 0):
+def modulus(value1 = 1, value2 = 1):
     
     addre= value1 % value2
     
-    return modulus
+    return addre
 #this definition is for modulus
 
 while (True):
@@ -48,28 +48,28 @@ while (True):
     
     if (arithch == "+"):
         
-        addition(value1, value2)
+        addre = addition(value1, value2)
         print("the result of", value1, "+", value2, "is", addre)
         
     elif (arithch == "-"):
         
-        subtraction(value1, value2)
+        addre = subtraction(value1, value2)
         print("the result of", value1, "-", value2, "is", addre)
         
     elif (arithch == "/"):
         
-        division(value1, value2)
+        addre = division(value1, value2)
         print("the result of", value1, "/", value2, "is", addre)
         
     elif (arithch == "*"):
         
-        multiplication(value1, value2)
+        addre = multiplication(value1, value2)
         print("the result of", value1, "*", value2, "is", addre)
         
     elif (arithch == "%"):
         
-        modulus(value1, value2)
-            print("the result of", value1, "%", value2, "is", addre)
+        addre = modulus(value1, value2)
+        print("the result of", value1, "%", value2, "is", addre)
         
     else:
         
