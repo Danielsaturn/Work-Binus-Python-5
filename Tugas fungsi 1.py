@@ -3,7 +3,7 @@ def introduction():
 | DANIEL     SATRIA |
 |       Cinere      |
 ---------------------""")
-#this definition is for introducinfg the creator of this code
+#this definition is for introducing the creator of this code
 
 def addition(value1, value2):
     
