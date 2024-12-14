@@ -33,27 +33,43 @@ def multiplication(value1, value2):
     print(addre)
 #this definition is for multiplication
 
-introduction()
-arithch = str(input("Enter Menu (+|-|/|*|%|stop): "))
-value1 = float(input("Please enter the first value: "))
-value2 = float(input("Please enter the second value: "))
-
-if (arithch == "+"):
+while (True):
+    introduction()
+    arithch = str(input("Enter Menu (+|-|/|*|%|stop): "))
+    value1 = float(input("Please enter the first value: "))
+    value2 = float(input("Please enter the second value: "))
     
-    addition(value1, value2)
+    if (arithch == "+"):
+        
+        addition(value1, value2)
+        
+    elif (arithch == "-"):
+        
+        subtraction(value1, value2)
+        
+    elif (arithch == "/"):
+        
+        division(value1, value2)
+        
+    elif (arithch == "*"):
+        
+        multiplication(value1, value2)
+        
+    else:
+        
+        print("PLEASE enter the correct arithmatic operator as shown in the menu!")
     
-elif (arithch == "-"):
+    continuing = input("Do you want to continue (type:'yes' or 'stop'): ") #We are using a while for looping
     
-    subtraction(value1, value2)
+    if (continuing == "yes"):
+        
+        continue
     
-elif (arithch == "/"):
+    elif (continuing == "stop"):
+        
+        break
     
-    division(value1, value2)
-    
-elif (arithch == "*"):
-    
-    multiplication(value1, value2)
-    
-else:
-    
-    print("PLEASE enter the correct arithmatic operator as shown in the menu!")
+    else:
+        
+        print("This has been forced break due to incorrect input")
+        break
