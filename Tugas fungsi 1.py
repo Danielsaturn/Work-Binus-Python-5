@@ -9,29 +9,36 @@ def addition(value1, value2):
     
     addre= value1 + value2
     
-    print(addre)
+    print("the result of", value1, "+", value2, "is", addre)
 #this definition is for addition
 
 def subtraction(value1, value2):
     
     addre= value1 - value2
     
-    print(addre)
+    print("the result of", value1, "-", value2, "is", addre)
 #this definition isfor subtraction
 
 def division(value1, value2):
     
     addre= value1 / value2
     
-    print(addre)
+    print("the result of", value1, "/", value2, "is", addre)
 #this definition is for division
 
 def multiplication(value1, value2):
     
     addre= value1 * value2
     
-    print(addre)
+    print("the result of", value1, "*", value2, "is", addre)
 #this definition is for multiplication
+
+def modulus(value1, value2):
+    
+    addre= value1 % value2
+    
+    print("the result of", value1, "%", value2, "is", addre)
+#this definition is for modulus
 
 while (True):
     introduction()
@@ -54,6 +61,10 @@ while (True):
     elif (arithch == "*"):
         
         multiplication(value1, value2)
+        
+    elif (arithch == "%"):
+        
+        modulus(value1, value2)
         
     else:
         
