@@ -43,6 +43,11 @@ def modulus(value1 = 1, value2 = 1):
 while (True):
     introduction()
     arithch = str(input("Enter Menu (+|-|/|*|%|stop): "))
+    
+    if (arithch == "stop"):#Put it here so when user type stop, it sdoes not pop up the value system
+        
+        break
+    
     value1 = float(input("Please enter the first value: "))
     value2 = float(input("Please enter the second value: "))
     
@@ -71,9 +76,11 @@ while (True):
         addre = modulus(value1, value2)
         print("the result of", value1, "%", value2, "is", addre)
         
+        
     else:
         
         print("PLEASE enter the correct arithmatic operator as shown in the menu!")
+        
     
     continuing = input("Do you want to continue (type:'yes' or 'stop'): ") #We are using a while for looping
     
@@ -81,11 +88,6 @@ while (True):
         
         continue
     
-    elif (continuing == "stop"):
-        
-        break
-    
     else:
         
-        print("This has been forced break due to incorrect input")
-        break
+        print("Force break due to not adding the correct word")
