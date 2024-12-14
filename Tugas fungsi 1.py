@@ -91,3 +91,4 @@ while (True):
     else:
         
         print("Force break due to not adding the correct word")
+        break
