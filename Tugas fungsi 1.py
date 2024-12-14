@@ -5,39 +5,39 @@ def introduction():
 ---------------------""")
 #this definition is for introducing the creator of this code
 
-def addition(value1, value2):
+def addition(value1 = 0, value2 = 0):
     
     addre= value1 + value2
     
-    print("the result of", value1, "+", value2, "is", addre)
+    return addition
 #this definition is for addition
 
-def subtraction(value1, value2):
+def subtraction(value1 = 0, value2 = 0):
     
     addre= value1 - value2
     
-    print("the result of", value1, "-", value2, "is", addre)
+    return subtraction
 #this definition isfor subtraction
 
-def division(value1, value2):
+def division(value1 = 0, value2 = 0):
     
     addre= value1 / value2
     
-    print("the result of", value1, "/", value2, "is", addre)
+    return division
 #this definition is for division
 
-def multiplication(value1, value2):
+def multiplication(value1 = 0, value2 = 0):
     
     addre= value1 * value2
     
-    print("the result of", value1, "*", value2, "is", addre)
+    return multiplication
 #this definition is for multiplication
 
-def modulus(value1, value2):
+def modulus(value1 = 0, value2 = 0):
     
     addre= value1 % value2
     
-    print("the result of", value1, "%", value2, "is", addre)
+    return modulus
 #this definition is for modulus
 
 while (True):
@@ -49,22 +49,27 @@ while (True):
     if (arithch == "+"):
         
         addition(value1, value2)
+        print("the result of", value1, "+", value2, "is", addre)
         
     elif (arithch == "-"):
         
         subtraction(value1, value2)
+        print("the result of", value1, "-", value2, "is", addre)
         
     elif (arithch == "/"):
         
         division(value1, value2)
+        print("the result of", value1, "/", value2, "is", addre)
         
     elif (arithch == "*"):
         
         multiplication(value1, value2)
+        print("the result of", value1, "*", value2, "is", addre)
         
     elif (arithch == "%"):
         
         modulus(value1, value2)
+            print("the result of", value1, "%", value2, "is", addre)
         
     else:
         
